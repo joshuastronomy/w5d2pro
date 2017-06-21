@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>{{title}}</title>
+  <link href="https://fonts.googleapis.com/css?family=Bungee|Ewert" rel="stylesheet">
+
+  <link rel="stylesheet" href="../public/styles/styles.css" />
+
+</head>
+
+<body>
+  <div class="dirCont">
+    {{#users}}
+      <div class="dirBox">
+        <img class="userAvatar" src="{{avatar}}" alt="">
+        <div class="dirName">
+          <p class="nameP">{{name}}</p>
+        </div>
+        {{#job}}
+          <p class="dirWork">{{job}}, {{company}}</p>
+        {{/job}}
+        {{^job}}
+        <p class="avail">Available for hire</p>
+        {{/job}}
+      </div>
+    {{/users}}
+  </div>
+</body>
+
+</html>

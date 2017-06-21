@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="../public/styles/styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Bungee|Ewert" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <div class="userCont">
+    <div class="idBox">
+      <img class="userAvatar" src="{{avatar}}" alt="">
+      <div class="namebox">
+        <p class="userName">
+          {{name}}
+        </p>
+        <br>
+        <span class="userDetails">{{#address.city}}{{address.city}}, {{address.country}}{{/address.city}}{{^address.city}}{{address.country}}{{/address.city}}</span>
+        {{#job}}
+          <span class="userDetails"><span style="color: black"> | </span> {{job}}, {{company}}</span>
+        {{/job}}
+        {{^job}}
+        <p class=avail2>Available for hire</p>
+        {{/job}}
+        <br>
+        <p class="userDetails">{{email}}  <span style="color: black"> | </span> {{phone}}</p>
+      </div>
+    </div>
+    <div class="uniskillsBox">
+      <div class="labelBox">
+        <p class="labels">
+          {{#university}}
+          <b>Education</b><br><b>Skills</b>
+          {{/university}}
+          {{^university}}
+          <b>Skills</b>
+          {{/university}}
+        </p>
+      </div>
+      <div class="detailBox">
+        <p>{{#university}}
+          {{university}}<br>
+          <ul class = "skillList">
+            {{#skills}}
+              <li>
+                {{.}}
+              </li>
+            {{/skills}}
+          </ul>
+          {{/university}}
+          {{^university}}
+          <ul class = "skillList">
+            {{#skills}}
+              <li>
+                {{.}}
+              </li>
+            {{/skills}}
+          </ul>
+          {{/university}}
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

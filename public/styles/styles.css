@@ -1,0 +1,139 @@
+/*@import url('https://fonts.googleapis.com/css?family=Black+Ops+One|Ewert');*/
+
+.dirCont {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.dirBox  {
+  background-image: url(../circuit-board-background-vector-by-ecrow-image-1225838--24.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 35px;
+  flex-basis: 20%;
+  border: 1px solid grey;
+  border-radius: 3px;
+  padding: 10px;
+  text-align: center;
+}
+
+.dirAvatar {
+  margin: 0 auto;
+
+}
+
+.dirName {
+  font-family: Ewert;
+  font-size: 2em;
+  color: rgb(0, 114, 179);
+}
+
+.nameP  {
+  border: 1px dashed grey;
+  background-color: rgb(242, 242, 242);
+}
+
+.dirWork  {
+  font-family: Bungee;
+  font-size: 1em;
+  color: rgb(80, 80, 80);
+  background-color: rgb(242, 242, 242);
+  border: 1px dashed grey;
+}
+
+.avail  {
+  font-family: Bungee;
+  font-size: 1em;
+  color: rgb(154, 9, 0);
+  background-color: rgb(242, 242, 242);
+  border: 1px dashed grey;
+}
+
+.userCont {
+  margin: 0 auto;
+  width: 1000px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  border: 5px double grey;
+
+
+}
+
+.idBox  {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.userAvatar {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.userName {
+  font-family: Ewert;
+  font-size: 3em;
+  margin-bottom: 0;
+  color: rgb(0, 114, 179);
+
+}
+
+.userDetails  {
+  font-family: Bungee;
+  font-size: 1em;
+  margin: 0;
+  line-height: 2;
+  color: darkred;
+}
+
+.avail2  {
+  font-family: Bungee;
+  font-size: 1em;
+  color: rgb(154, 9, 0);
+  background-color: rgb(242, 242, 242);
+  border: 1px dashed grey;
+  margin: 0;
+}
+
+
+.uniskillsBox {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  line-height: 2;
+}
+
+.labels {
+  margin-right: 20px;
+  color: grey;
+}
+
+
+.labelBox {
+  font-family: Bungee;
+  font-size: 1em;
+  text-align: right;
+
+}
+
+.detailBox  {
+  font-family: Bungee;
+  font-size: 1em;
+}
+
+.detailBox p  {
+  margin: 0;
+  margin-top: 16px;
+}
+
+ul  {
+  padding: 0;
+  margin: 0;
+}
+
+.skillList  {
+  list-style-type: none;
+}
