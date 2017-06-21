@@ -21,9 +21,7 @@ app.get('/index', function(req, res){
 })
 
 app.get('/users/:id', function(req, res)  {
-  let id = req.params.id;
-  let user = uData.users[id];
-  res.render('userpage', user);
+  res.render('userpage', uData.users[req.params.id]);
 })
 
 app.listen(3000, function () {
