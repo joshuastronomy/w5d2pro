@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/joshuastronomy/w5d2pro#readme",
   "dependencies": {
+    "assert": "^1.4.1",
     "express": "^4.15.3",
+    "mongodb": "^2.2.29",
     "mustache-express": "^1.2.4"
   }
 }
