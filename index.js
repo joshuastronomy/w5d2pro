@@ -13,7 +13,7 @@ app.set('view engine', 'mustache')
 app.use('/public', express.static('public'));
 
 app.get('/', function(req, res) {
-  res.send(uData);
+  res.render('index', uData);
 })
 
 app.get('/index', function(req, res){
