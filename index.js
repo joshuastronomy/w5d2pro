@@ -24,6 +24,6 @@ app.get('/users/:id', function(req, res)  {
   res.render('userpage', uData.users[req.params.id - 1]);
 })
 
-app.listen(provide.env.PORT || 3000, function () {
+app.listen(process.env.PORT || 3000, function () {
   console.log('User directory online...');
 })
